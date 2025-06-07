@@ -1,0 +1,134 @@
+
+:root {
+  --color-primary: #32CD32;
+  --color-secondary: #2F4F4F;
+  --color-accent-yellow: #FFEB3B;
+  --color-accent-blue: #87CEEB;
+  --color-background: #E6FFEA;
+  --color-text-dark: #222222;
+  --color-text-light: #F9F9F9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .primary {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  background-color: var(--color-text-light);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(50, 205, 50, 0.3);
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--color-text-dark);
+}
+
+fieldset {
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: var(--color-text-dark);
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+button[type="submit"] {
+  background-color: var(--color-accent-yellow);
+  color: var(--color-text-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #C5D900;
+}
+
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  font-size: 0.9rem;
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.column1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  margin-bottom: 12px; /* adjust as needed */
+  gap: 10px;
+}
+
+.column2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-bottom: 12px; /* adjust as needed */
+  gap: 10px;
+}
